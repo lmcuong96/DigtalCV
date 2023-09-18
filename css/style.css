@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-family: 'Inter', 'Rubik', sans-serif;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+/* .m-0{
+    margin: 0;
+} */
+.bg-grey {
+    background-color: #f1f3f5;
+}
+
+.bg-img1 {
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(./images/banner.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+    width: 300px;
+}
+
+.navbar-nav span {
+    font-size: 14px;
+}
+
+.navbar-nav p {
+    margin-bottom: 0;
+}
+
+.bg-grey-2 {
+    background-color: #dee2e6;
+}
+
+#personal-info ul {
+    list-style: none;
+}
+
+#personal-info span {
+    list-style: none;
+}
+
+.job-text p {
+    margin: 0 !important;
+}
+
+.job-text ul {
+    list-style: none;
+}
+
+.job-text ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #1c7ed6;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+    font-size: 22px;
+}
+
+.job-icon-list i {
+    border-radius: 50%;
+    width: 48px;
+
+}
+
+.border2 {
+    border: 1px solid #4dabf7;
+    height: 1px;
+    width: 50px;
+}
+
+.border-grey {
+    border: 1px solid #dee2e6;
+    height: 1px;
+    width: 50px;
+}
+
+.project-info img {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+.container li a {
+    text-decoration: none;
+}
+
+/* Phone */
+@media only screen and (max-width: 739px) {
+    a.navbar-brand {
+        display: none !important;
+
+    }
+
+    .navbar-nav {
+        display: block !important;
+    }
+
+    a.border-start {
+        border-left: 1px solid white !important;
+    }
+
+    a.border-end {
+        border-right: 1px solid white !important;
+    }
+
+    .col2 {
+        display: grid !important;
+        grid-auto-columns: 1fr 1fr;
+    }
+    #about .row {
+        flex-direction: column !important;
+    }
+    .bb{
+        border-bottom: 1px solid #dc3545 !important;
+    }
+    div.border-end {
+        border-right: 1px solid #f1f3f5!important;
+    }
+    .pt-p{
+        padding-top: 25px!important;
+    }
+    .project-list  {
+        display: block !important;
+    }
+    div.project-list>.project-info:nth-child(2)  {
+        margin: 30px 0  !important;
+    }
+    .container > ul {
+        padding-left: 0;
+    }
+    .container > ul > li {
+        padding: 3rem 0 !important;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    a.navbar-brand {
+        display: none !important;
+
+    }
+
+    .container,
+    .container-sm {
+        max-width: 100% !important;
+    }
+
+
+
+}
